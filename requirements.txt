@@ -1,0 +1,7 @@
+opencv-python-headless
+numpy
+transformers
+torch
+torchvision
+pillow
+supervision 
