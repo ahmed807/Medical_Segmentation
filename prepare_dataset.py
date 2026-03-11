@@ -6,7 +6,7 @@ import numpy as np
 import random
 
 # --- CONFIGURATION ---
-RAW_DATA_DIR = "/home/mostafaa/unannotate/output" # Your path
+RAW_DATA_DIR = "/home/ahmed/unannotate/output" # Your path
 OUTPUT_DIR = "sam_finetuning_dataset"
 SPLIT_RATIOS = (0.8, 0.1, 0.1) # 80% Train, 10% Val, 10% Test
 RANDOM_SEED = 42 # Ensures the split is the same every time you run it

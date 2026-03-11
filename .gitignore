@@ -1,3 +1,8 @@
 sam_finetuning_dataset/
 .DS_Store
 seg/
+sam_2_best_val_model.pth
+sam_best_val_model.pth
+sam_model_checkpoint_ep50.pth
+sam_model_checkpoint_ep100.pth
+test_results
