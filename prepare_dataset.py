@@ -6,7 +6,7 @@ import numpy as np
 import random
 
 # --- CONFIGURATION ---
-RAW_DATA_DIR = "/home/ahmed/unannotate/output" # Your path
+RAW_DATA_DIR = "/home/ahma/unannotate/output" # Your path
 OUTPUT_DIR = "sam_finetuning_dataset"
 SPLIT_RATIOS = (0.8, 0.1, 0.1) # 80% Train, 10% Val, 10% Test
 RANDOM_SEED = 42 # Ensures the split is the same every time you run it
@@ -24,12 +24,14 @@ def prepare_dataset():
     # 1. Setup Output Structure
     images_dir = os.path.join(OUTPUT_DIR, "images")
     masks_dir = os.path.join(OUTPUT_DIR, "masks")
-    
+    prompt_masks_dir = os.path.join(OUTPUT_DIR, "prompt_masks")
+
     if os.path.exists(OUTPUT_DIR):
         shutil.rmtree(OUTPUT_DIR)
     
     os.makedirs(images_dir, exist_ok=True)
     os.makedirs(masks_dir, exist_ok=True)
+    os.makedirs(prompt_masks_dir, exist_ok=True)
     
     all_entries = []
     print(f"Processing data from '{RAW_DATA_DIR}'...")
@@ -82,15 +84,28 @@ def prepare_dataset():
 
             new_mask_filename = f"{unique_base_name}_mask.png"
             shutil.copy(gt_path, os.path.join(masks_dir, new_mask_filename))
+            
+            new_prompt_mask_filename = f"{unique_base_name}_prompt_mask.png"
+            shutil.copy(prompt_path, os.path.join(prompt_masks_dir, new_prompt_mask_filename))
 
-            # Add to list
             all_entries.append({
                 "image": f"images/{new_image_filename}",
                 "annotation": f"masks/{new_mask_filename}",
+                "annotation_mask": f"prompt_masks/{new_prompt_mask_filename}",  # <-- added
                 "prompt_box": prompt_box,
                 "label": value.get("object", "unknown"),
-                "prompt_text": value.get("annotation", "unknown")
+                "prompt_text": value.get("annotation", "unknown"),
             })
+
+            # # Add to list
+            # all_entries.append({
+            #     "image": f"images/{new_image_filename}",
+            #     "annotation": f"masks/{new_mask_filename}",
+            #     "prompt_box": prompt_box,
+            #     "label": value.get("object", "unknown"),
+            #     "prompt_text": value.get("annotation", "unknown"),
+            #     "annotation_mask": prompt_path,
+            # })
 
     # 3. Shuffle and Split
     random.seed(RANDOM_SEED)
