@@ -27,7 +27,7 @@ Usage - full test split with per-type evaluation:
     python inference.py \\
         --model    sam3_best.pth \\
         --batch \\
-        --dataset  sam_finetuning_dataset \\
+        --dataset  sam_finetuning_dataset_pipeline \\
         --out_dir  results/
 
 Evaluation metrics (requires: pip install torchmetrics lpips):
@@ -51,6 +51,18 @@ from transformers import Sam3Processor, Sam3Model
 from diffusers    import FluxFillPipeline
 from tqdm         import tqdm
 from collections  import defaultdict
+
+
+# ── HUGGING FACE LOGIN ─────────────────────────────────────────────────────────
+HF_TOKEN = os.environ.get("HF_TOKEN", None)
+if HF_TOKEN is None:
+    raise EnvironmentError(
+        "HF_TOKEN environment variable not set.\n"
+        "Run: export HF_TOKEN='hf_your_token_here'  before running train.py"
+    )
+login(token=HF_TOKEN)
+print("Logged in to Hugging Face.")
+
 
 try:
     from torchmetrics.functional import structural_similarity_index_measure as ssim_fn
@@ -408,7 +420,7 @@ def parse_args():
 
     p.add_argument("--annot_mask",
                    help="Annotation mask path (single-image mode)")
-    p.add_argument("--dataset",   default="sam_finetuning_dataset",
+    p.add_argument("--dataset",   default="sam_finetuning_dataset_pipeline",
                    help="Dataset root dir (batch mode)")
     p.add_argument("--gt_clean",
                    help="Ground truth clean image for SSIM/LPIPS (single mode)")

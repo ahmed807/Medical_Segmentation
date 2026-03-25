@@ -1,5 +1,6 @@
 sam_finetuning_dataset/
 sam_finetuning_dataset_OLD/
+sam_finetuning_dataset_pipeline/
 .DS_Store
 seg/
 sam_2_best_val_model.pth
@@ -9,3 +10,5 @@ sam_model_checkpoint_ep100.pth
 test_results
 venv
 fine_tune_SAM_3.ipynb
+sam3_checkpoint_ep30.pth
+sam3_best.pth

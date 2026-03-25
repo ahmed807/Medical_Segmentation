@@ -64,22 +64,22 @@ except ImportError:
 
 
 # ── CONFIGURATION ──────────────────────────────────────────────────────────────
-DATASET_DIR   = "sam_finetuning_dataset"
+DATASET_DIR   = "sam_finetuning_dataset_pipeline"
 MODEL_ID      = "facebook/sam3"
 DEVICE        = "cuda:0"
 
-BATCH_SIZE    = 4
-GRAD_ACCUM    = 4       # Effective batch = BATCH_SIZE * GRAD_ACCUM = 16
-NUM_EPOCHS    = 100
+BATCH_SIZE    = 2
+GRAD_ACCUM    = 2       # Effective batch = BATCH_SIZE * GRAD_ACCUM = 16
+NUM_EPOCHS    = 50
 LR            = 1e-5
 WARMUP_EPOCHS = 3
 WEIGHT_DECAY  = 1e-4
-NUM_WORKERS   = 8
+NUM_WORKERS   = 1
 PIN_MEMORY    = True
 PREFETCH      = 4
 
-CHECKPOINT_EVERY = 25
-BEST_MODEL_PATH  = "sam3_best.pth"
+CHECKPOINT_EVERY = 5   #############CHANGE was 25
+BEST_MODEL_PATH  = "pipeline/SAM3/sam3_best.pth"
 LOG_DIR          = "runs/sam3_finetune"
 
 # ── Option B: freeze heavy encoders, train mask_decoder + dot_product_scoring ──

@@ -21,7 +21,7 @@ Expected input structure:
     └── ...
 
 Output structure:
-    sam_finetuning_dataset/
+    sam_finetuning_dataset_pipeline/
     ├── images/           <- annotated images (with arrows/annotations)
     ├── masks/            <- segmentation maps (GT object masks for SAM)
     ├── prompt_masks/     <- annotation masks (arrow pixels -> SAM bbox prompt + Flux inpaint)
@@ -48,12 +48,12 @@ from tqdm import tqdm
 
 
 # ── CONFIGURATION ──────────────────────────────────────────────────────────────
-RAW_DATA_DIR = "/home/ahma/unannotate/output"
-OUTPUT_DIR   = "sam_finetuning_dataset"
+RAW_DATA_DIR = "/home/ahmed/unannotate/output"
+OUTPUT_DIR   = "sam_finetuning_dataset_pipeline"
 SPLIT_RATIOS = (0.8, 0.1, 0.1)   # Train / Val / Test
 RANDOM_SEED  = 42
 BBOX_PADDING = 10                 # Pixels of padding around annotation bbox
-NUM_WORKERS  = 16                 # Parallel folder-processing workers
+NUM_WORKERS  = 1                 # Parallel folder-processing workers
 # ───────────────────────────────────────────────────────────────────────────────
 
 
