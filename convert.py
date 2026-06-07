@@ -32,6 +32,7 @@ def run_conversion():
     folder_names = [f for f in os.listdir(config.RAW_DATA_DIR) 
                     if os.path.isdir(os.path.join(config.RAW_DATA_DIR, f))]
     
+    
     for folder_name in folder_names:
         folder_path = os.path.join(config.RAW_DATA_DIR, folder_name)
         

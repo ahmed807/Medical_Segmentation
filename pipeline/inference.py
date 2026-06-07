@@ -51,7 +51,7 @@ from transformers import Sam3Processor, Sam3Model
 from diffusers    import FluxFillPipeline
 from tqdm         import tqdm
 from collections  import defaultdict
-
+from huggingface_hub import login
 
 # ── HUGGING FACE LOGIN ─────────────────────────────────────────────────────────
 HF_TOKEN = os.environ.get("HF_TOKEN", None)

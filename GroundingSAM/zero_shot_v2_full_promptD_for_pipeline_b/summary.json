@@ -1,0 +1,40 @@
+{
+  "prompt": "thin arrow icon . dashed line outline . small letter or number .",
+  "thresholds": {
+    "box": 0.25,
+    "text": 0.2
+  },
+  "n_images": 4147,
+  "per_class": {
+    "arrow": {
+      "n_gt": 2072,
+      "n_pred": 5022,
+      "n_matched": 463,
+      "recall": 0.2235,
+      "precision": 0.0922,
+      "ap@0.5": 0.0554,
+      "miou_sam_on_matched": 0.6948,
+      "miou_color_on_matched": 0.324
+    },
+    "freeform_bbox": {
+      "n_gt": 4124,
+      "n_pred": 2955,
+      "n_matched": 965,
+      "recall": 0.234,
+      "precision": 0.3266,
+      "ap@0.5": 0.1949,
+      "miou_sam_on_matched": 0.0575,
+      "miou_color_on_matched": 0.0429
+    },
+    "number_letter": {
+      "n_gt": 2072,
+      "n_pred": 12187,
+      "n_matched": 329,
+      "recall": 0.1588,
+      "precision": 0.027,
+      "ap@0.5": 0.0256,
+      "miou_sam_on_matched": 0.4316,
+      "miou_color_on_matched": 0.3088
+    }
+  }
+}

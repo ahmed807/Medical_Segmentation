@@ -48,12 +48,12 @@ from tqdm import tqdm
 
 
 # ── CONFIGURATION ──────────────────────────────────────────────────────────────
-RAW_DATA_DIR = "/home/ahmed/unannotate/output"
-OUTPUT_DIR   = "sam_finetuning_dataset_pipeline"
+RAW_DATA_DIR = "/home/ahma/unannotate/output"
+OUTPUT_DIR   = "pipeline/sam_finetuning_dataset_pipeline"
 SPLIT_RATIOS = (0.8, 0.1, 0.1)   # Train / Val / Test
 RANDOM_SEED  = 42
 BBOX_PADDING = 10                 # Pixels of padding around annotation bbox
-NUM_WORKERS  = 1                 # Parallel folder-processing workers
+NUM_WORKERS  = 8                 # Parallel folder-processing workers
 # ───────────────────────────────────────────────────────────────────────────────
 
 
@@ -245,7 +245,11 @@ def prepare_dataset(resume: bool = False):
     ])
     print(f"Found {len(folder_names):,} folders in '{RAW_DATA_DIR}'")
     print(f"Processing with {NUM_WORKERS} parallel workers...\n")
-
+    
+    folder_names = sorted(folder_names, key=int)[:1000]
+    
+    print(f"Found {len(folder_names):,} folders after truncation in '{RAW_DATA_DIR}'")
+    print(f"Processing with {NUM_WORKERS} parallel workers...\n")
     # ── 2. Parallel folder processing ──────────────────────────────────────────
     all_entries  = []
     all_warnings = []

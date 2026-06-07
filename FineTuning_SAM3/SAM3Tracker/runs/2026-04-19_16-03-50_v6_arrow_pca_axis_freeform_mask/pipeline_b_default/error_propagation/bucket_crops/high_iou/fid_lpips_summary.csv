@@ -1,0 +1,4 @@
+type,n,lpips_mean,lpips_median,lpips_std,fid
+arrow,67,0.1734,0.1698,0.0578,109.242
+number_letter,3,0.1764,0.2006,0.0423,223.364
+OVERALL,70,0.1735,0.1704,0.0570,111.146

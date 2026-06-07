@@ -1,0 +1,5 @@
+type,n,lpips_mean,lpips_median,lpips_std,fid
+arrow,5022,0.2266,0.2125,0.0980,33.521
+freeform_bbox,1323,0.4572,0.4582,0.1599,88.567
+number_letter,12187,0.2012,0.1847,0.0810,27.742
+OVERALL,18532,0.2264,0.1993,0.1138,20.577

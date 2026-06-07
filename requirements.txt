@@ -1,9 +1,19 @@
-opencv-python-headless
+# Core Logic & Utilities
 numpy
-transformers
+tqdm
+huggingface_hub
+
+# Computer Vision & Image Processing
+opencv-python-headless
+pillow
+supervision
+matplotlib
+
+# Deep Learning (PyTorch)
 torch
 torchvision
-pillow
-supervision 
-ipywidgets
+
+# Transformers & AI Models
+transformers>=4.45.0
 diffusers
+ipywidgets

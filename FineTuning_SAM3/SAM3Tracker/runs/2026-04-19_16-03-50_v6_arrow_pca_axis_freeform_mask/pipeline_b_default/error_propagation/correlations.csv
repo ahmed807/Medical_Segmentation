@@ -1,0 +1,5 @@
+type,n,pearson_r,spearman_r
+arrow,991,-0.1873,-0.0852
+freeform_bbox,273,-0.1455,0.0317
+number_letter,2252,0.0237,0.2258
+OVERALL,3516,-0.0871,0.1388

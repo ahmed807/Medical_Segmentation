@@ -1,0 +1,16 @@
+bucket,type,n,iou_mean,iou_median,lpips_mean,lpips_median,lpips_std
+zero_overlap,arrow,791,0.0008,0.0000,0.2243,0.2122,0.0934
+zero_overlap,freeform_bbox,248,0.0023,0.0000,0.4610,0.4662,0.1619
+zero_overlap,number_letter,2069,0.0008,0.0000,0.2037,0.1881,0.0813
+zero_overlap,OVERALL,3108,0.0009,0.0000,0.2295,0.2033,0.1159
+low_iou,arrow,48,0.1740,0.1710,0.2397,0.2351,0.1000
+low_iou,freeform_bbox,23,0.1278,0.1229,0.4004,0.4098,0.1139
+low_iou,number_letter,94,0.1325,0.0899,0.3057,0.3165,0.0886
+low_iou,OVERALL,165,0.1439,0.1152,0.2997,0.3103,0.1075
+mid_iou,arrow,85,0.4697,0.4846,0.1747,0.1673,0.0705
+mid_iou,freeform_bbox,2,0.3350,0.3350,0.2582,0.2582,0.0952
+mid_iou,number_letter,86,0.4196,0.4118,0.1891,0.1753,0.0745
+mid_iou,OVERALL,173,0.4433,0.4413,0.1828,0.1726,0.0731
+high_iou,arrow,67,0.6748,0.6760,0.1734,0.1698,0.0578
+high_iou,number_letter,3,0.6209,0.6260,0.1764,0.2006,0.0423
+high_iou,OVERALL,70,0.6725,0.6722,0.1735,0.1704,0.0570

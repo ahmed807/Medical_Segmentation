@@ -1,0 +1,8 @@
+[2340/2_14] Empty mask, skipping
+[3293/0_0] Empty mask, skipping
+[5727/2_2] Empty mask, skipping
+[5727/v2] No valid annotations, skipping image
+[6576/2_7] Empty mask, skipping
+[7278/4_12] Empty mask, skipping
+[7278/v4] No valid annotations, skipping image
+[8895/3_7] Empty mask, skipping

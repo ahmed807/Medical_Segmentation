@@ -64,21 +64,21 @@ except ImportError:
 
 
 # ── CONFIGURATION ──────────────────────────────────────────────────────────────
-DATASET_DIR   = "sam_finetuning_dataset_pipeline"
+DATASET_DIR   = "pipeline/sam_finetuning_dataset_pipeline"
 MODEL_ID      = "facebook/sam3"
 DEVICE        = "cuda:0"
 
-BATCH_SIZE    = 2
-GRAD_ACCUM    = 2       # Effective batch = BATCH_SIZE * GRAD_ACCUM = 16
-NUM_EPOCHS    = 50
+BATCH_SIZE    = 16
+GRAD_ACCUM    = 1       # Effective batch = BATCH_SIZE * GRAD_ACCUM = 16
+NUM_EPOCHS    = 30
 LR            = 1e-5
 WARMUP_EPOCHS = 3
 WEIGHT_DECAY  = 1e-4
-NUM_WORKERS   = 1
+NUM_WORKERS   = 8
 PIN_MEMORY    = True
 PREFETCH      = 4
 
-CHECKPOINT_EVERY = 5   #############CHANGE was 25
+CHECKPOINT_EVERY = 10   #############CHANGE was 25
 BEST_MODEL_PATH  = "pipeline/SAM3/sam3_best.pth"
 LOG_DIR          = "runs/sam3_finetune"
 

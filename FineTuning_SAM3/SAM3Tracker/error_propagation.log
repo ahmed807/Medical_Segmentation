@@ -1,0 +1,189 @@
+[2026-05-21T10:13:43+02:00] ###################################################
+[2026-05-21T10:13:43+02:00] # PIPELINE B ERROR PROPAGATION  --  bucketed analysis
+[2026-05-21T10:13:43+02:00] # host       : social-large
+[2026-05-21T10:13:43+02:00] # input json : /home/ahma/Grounded-SAM-2/pipeline_b_input_default.json
+[2026-05-21T10:13:43+02:00] # lpips csv  : /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/eval_fid_lpips/lpips_per_sample.csv
+[2026-05-21T10:13:43+02:00] # out dir    : /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation
+[2026-05-21T10:13:43+02:00] ###################################################
+[2026-05-21T10:13:43+02:00] 
+[2026-05-21T10:13:43+02:00] === STEP 1: detection IoU + bucketing + symlinks ===
+Loaded 8288 GT entries from test.json
+Indexed GT by 7599 source stems
+  GT per source: min=1, max=3, mean=1.09
+Loaded 18532 Pipeline B detections
+matched IoU:   0%|          | 0/18532 [00:00<?, ?det/s]matched IoU:   0%|          | 70/18532 [00:00<00:26, 697.67det/s]matched IoU:   1%|          | 140/18532 [00:00<00:27, 679.12det/s]matched IoU:   1%|          | 208/18532 [00:00<00:30, 591.82det/s]matched IoU:   2%|▏         | 290/18532 [00:00<00:27, 671.24det/s]matched IoU:   2%|▏         | 359/18532 [00:00<00:27, 670.07det/s]matched IoU:   2%|▏         | 428/18532 [00:00<00:26, 674.18det/s]matched IoU:   3%|▎         | 506/18532 [00:00<00:25, 706.96det/s]matched IoU:   3%|▎         | 578/18532 [00:00<00:25, 706.65det/s]matched IoU:   4%|▎         | 653/18532 [00:00<00:24, 717.28det/s]matched IoU:   4%|▍         | 728/18532 [00:01<00:24, 727.03det/s]matched IoU:   4%|▍         | 809/18532 [00:01<00:23, 750.17det/s]matched IoU:   5%|▍         | 892/18532 [00:01<00:22, 771.93det/s]matched IoU:   5%|▌         | 970/18532 [00:01<00:22, 773.21det/s]matched IoU:   6%|▌         | 1091/18532 [00:01<00:19, 900.98det/s]matched IoU:   6%|▋         | 1182/18532 [00:01<00:20, 831.25det/s]matched IoU:   7%|▋         | 1267/18532 [00:01<00:21, 805.06det/s]matched IoU:   7%|▋         | 1349/18532 [00:01<00:23, 731.43det/s]matched IoU:   8%|▊         | 1424/18532 [00:01<00:23, 733.38det/s]matched IoU:   8%|▊         | 1499/18532 [00:02<00:24, 706.35det/s]matched IoU:   8%|▊         | 1571/18532 [00:02<00:25, 677.62det/s]matched IoU:   9%|▉         | 1641/18532 [00:02<00:24, 683.30det/s]matched IoU:   9%|▉         | 1724/18532 [00:02<00:23, 722.92det/s]matched IoU:  10%|▉         | 1797/18532 [00:02<00:23, 717.89det/s]matched IoU:  10%|█         | 1904/18532 [00:02<00:20, 816.40det/s]matched IoU:  11%|█         | 1987/18532 [00:02<00:22, 731.60det/s]matched IoU:  11%|█         | 2063/18532 [00:02<00:23, 714.58det/s]matched IoU:  12%|█▏        | 2136/18532 [00:02<00:23, 697.57det/s]matched IoU:  12%|█▏        | 2214/18532 [00:03<00:22, 718.34det/s]matched IoU:  12%|█▏        | 2290/18532 [00:03<00:22, 729.43det/s]matched IoU:  13%|█▎        | 2364/18532 [00:03<00:22, 710.16det/s]matched IoU:  13%|█▎        | 2436/18532 [00:03<00:24, 667.01det/s]matched IoU:  14%|█▎        | 2509/18532 [00:03<00:23, 683.93det/s]matched IoU:  14%|█▍        | 2580/18532 [00:03<00:23, 689.78det/s]matched IoU:  14%|█▍        | 2650/18532 [00:03<00:23, 682.00det/s]matched IoU:  15%|█▍        | 2719/18532 [00:03<00:23, 669.65det/s]matched IoU:  15%|█▌        | 2797/18532 [00:03<00:22, 699.43det/s]matched IoU:  16%|█▌        | 2885/18532 [00:03<00:20, 750.74det/s]matched IoU:  16%|█▌        | 2961/18532 [00:04<00:21, 728.73det/s]matched IoU:  16%|█▋        | 3035/18532 [00:04<00:21, 713.39det/s]matched IoU:  17%|█▋        | 3107/18532 [00:04<00:22, 693.56det/s]matched IoU:  17%|█▋        | 3190/18532 [00:04<00:20, 731.17det/s]matched IoU:  18%|█▊        | 3265/18532 [00:04<00:20, 728.54det/s]matched IoU:  18%|█▊        | 3343/18532 [00:04<00:20, 742.11det/s]matched IoU:  18%|█▊        | 3425/18532 [00:04<00:19, 762.96det/s]matched IoU:  19%|█▉        | 3502/18532 [00:04<00:20, 747.93det/s]matched IoU:  19%|█▉        | 3585/18532 [00:04<00:19, 769.61det/s]matched IoU:  20%|█▉        | 3663/18532 [00:05<00:20, 730.39det/s]matched IoU:  20%|██        | 3742/18532 [00:05<00:19, 744.97det/s]matched IoU:  21%|██        | 3817/18532 [00:05<00:20, 727.43det/s]matched IoU:  21%|██        | 3892/18532 [00:05<00:19, 732.56det/s]matched IoU:  21%|██▏       | 3966/18532 [00:05<00:19, 730.51det/s]matched IoU:  22%|██▏       | 4040/18532 [00:05<00:20, 699.61det/s]matched IoU:  22%|██▏       | 4111/18532 [00:05<00:21, 667.00det/s]matched IoU:  23%|██▎       | 4185/18532 [00:05<00:20, 684.90det/s]matched IoU:  23%|██▎       | 4254/18532 [00:05<00:20, 680.42det/s]matched IoU:  23%|██▎       | 4323/18532 [00:06<00:21, 672.02det/s]matched IoU:  24%|██▎       | 4391/18532 [00:06<00:21, 667.32det/s]matched IoU:  24%|██▍       | 4458/18532 [00:06<00:21, 647.88det/s]matched IoU:  24%|██▍       | 4532/18532 [00:06<00:20, 672.75det/s]matched IoU:  25%|██▍       | 4600/18532 [00:06<00:22, 630.96det/s]matched IoU:  25%|██▌       | 4675/18532 [00:06<00:21, 657.29det/s]matched IoU:  26%|██▌       | 4745/18532 [00:06<00:20, 667.15det/s]matched IoU:  26%|██▌       | 4829/18532 [00:06<00:19, 716.23det/s]matched IoU:  26%|██▋       | 4906/18532 [00:06<00:18, 731.36det/s]matched IoU:  27%|██▋       | 4982/18532 [00:06<00:18, 738.73det/s]matched IoU:  27%|██▋       | 5058/18532 [00:07<00:18, 744.35det/s]matched IoU:  28%|██▊       | 5133/18532 [00:07<00:18, 728.55det/s]matched IoU:  28%|██▊       | 5207/18532 [00:07<00:18, 723.85det/s]matched IoU:  28%|██▊       | 5280/18532 [00:07<00:18, 711.38det/s]matched IoU:  29%|██▉       | 5362/18532 [00:07<00:17, 740.97det/s]matched IoU:  29%|██▉       | 5440/18532 [00:07<00:17, 751.55det/s]matched IoU:  30%|██▉       | 5516/18532 [00:07<00:17, 751.83det/s]matched IoU:  30%|███       | 5592/18532 [00:07<00:17, 721.63det/s]matched IoU:  31%|███       | 5665/18532 [00:07<00:18, 697.39det/s]matched IoU:  31%|███       | 5736/18532 [00:08<00:18, 683.29det/s]matched IoU:  31%|███▏      | 5806/18532 [00:08<00:18, 684.71det/s]matched IoU:  32%|███▏      | 5877/18532 [00:08<00:18, 691.53det/s]matched IoU:  32%|███▏      | 5956/18532 [00:08<00:17, 716.64det/s]matched IoU:  33%|███▎      | 6028/18532 [00:08<00:18, 676.65det/s]matched IoU:  33%|███▎      | 6102/18532 [00:08<00:17, 692.87det/s]matched IoU:  33%|███▎      | 6180/18532 [00:08<00:17, 716.56det/s]matched IoU:  34%|███▍      | 6270/18532 [00:08<00:15, 769.46det/s]matched IoU:  34%|███▍      | 6348/18532 [00:08<00:16, 750.26det/s]matched IoU:  35%|███▍      | 6430/18532 [00:08<00:15, 768.68det/s]matched IoU:  35%|███▌      | 6508/18532 [00:09<00:15, 752.48det/s]matched IoU:  36%|███▌      | 6584/18532 [00:09<00:15, 754.16det/s]matched IoU:  36%|███▌      | 6660/18532 [00:09<00:16, 733.60det/s]matched IoU:  36%|███▋      | 6734/18532 [00:09<00:16, 726.29det/s]matched IoU:  37%|███▋      | 6827/18532 [00:09<00:15, 779.94det/s]matched IoU:  37%|███▋      | 6909/18532 [00:09<00:14, 789.60det/s]matched IoU:  38%|███▊      | 6989/18532 [00:09<00:14, 791.22det/s]matched IoU:  38%|███▊      | 7069/18532 [00:09<00:14, 787.24det/s]matched IoU:  39%|███▊      | 7148/18532 [00:09<00:15, 753.72det/s]matched IoU:  39%|███▉      | 7224/18532 [00:10<00:15, 753.38det/s]matched IoU:  39%|███▉      | 7300/18532 [00:10<00:15, 723.17det/s]matched IoU:  40%|███▉      | 7397/18532 [00:10<00:14, 790.88det/s]matched IoU:  40%|████      | 7477/18532 [00:10<00:14, 768.04det/s]matched IoU:  41%|████      | 7555/18532 [00:10<00:14, 748.16det/s]matched IoU:  41%|████      | 7631/18532 [00:10<00:14, 735.13det/s]matched IoU:  42%|████▏     | 7721/18532 [00:10<00:13, 779.13det/s]matched IoU:  42%|████▏     | 7800/18532 [00:10<00:13, 769.95det/s]matched IoU:  43%|████▎     | 7878/18532 [00:10<00:14, 733.07det/s]matched IoU:  43%|████▎     | 7958/18532 [00:10<00:14, 749.74det/s]matched IoU:  43%|████▎     | 8034/18532 [00:11<00:14, 711.04det/s]matched IoU:  44%|████▍     | 8112/18532 [00:11<00:14, 727.62det/s]matched IoU:  44%|████▍     | 8189/18532 [00:11<00:14, 738.41det/s]matched IoU:  45%|████▍     | 8264/18532 [00:11<00:14, 733.31det/s]matched IoU:  45%|████▌     | 8357/18532 [00:11<00:12, 788.17det/s]matched IoU:  46%|████▌     | 8437/18532 [00:11<00:13, 769.64det/s]matched IoU:  46%|████▌     | 8515/18532 [00:11<00:13, 742.77det/s]matched IoU:  46%|████▋     | 8590/18532 [00:11<00:14, 709.48det/s]matched IoU:  47%|████▋     | 8687/18532 [00:11<00:12, 781.38det/s]matched IoU:  47%|████▋     | 8766/18532 [00:12<00:12, 769.15det/s]matched IoU:  48%|████▊     | 8844/18532 [00:12<00:13, 727.82det/s]matched IoU:  48%|████▊     | 8918/18532 [00:12<00:13, 690.67det/s]matched IoU:  48%|████▊     | 8988/18532 [00:12<00:14, 672.14det/s]matched IoU:  49%|████▉     | 9056/18532 [00:12<00:14, 660.72det/s]matched IoU:  49%|████▉     | 9157/18532 [00:12<00:12, 754.97det/s]matched IoU:  50%|████▉     | 9237/18532 [00:12<00:12, 760.65det/s]matched IoU:  50%|█████     | 9314/18532 [00:12<00:12, 716.71det/s]matched IoU:  51%|█████     | 9387/18532 [00:12<00:13, 684.16det/s]matched IoU:  51%|█████     | 9459/18532 [00:13<00:13, 692.08det/s]matched IoU:  51%|█████▏    | 9536/18532 [00:13<00:12, 711.39det/s]matched IoU:  52%|█████▏    | 9610/18532 [00:13<00:12, 719.06det/s]matched IoU:  52%|█████▏    | 9684/18532 [00:13<00:12, 722.55det/s]matched IoU:  53%|█████▎    | 9761/18532 [00:13<00:11, 735.61det/s]matched IoU:  53%|█████▎    | 9840/18532 [00:13<00:11, 749.87det/s]matched IoU:  54%|█████▎    | 9916/18532 [00:13<00:12, 699.76det/s]matched IoU:  54%|█████▍    | 9987/18532 [00:13<00:12, 667.56det/s]matched IoU:  54%|█████▍    | 10055/18532 [00:13<00:12, 662.42det/s]matched IoU:  55%|█████▍    | 10122/18532 [00:14<00:12, 658.65det/s]matched IoU:  55%|█████▍    | 10189/18532 [00:14<00:12, 656.12det/s]matched IoU:  55%|█████▌    | 10255/18532 [00:14<00:12, 654.87det/s]matched IoU:  56%|█████▌    | 10329/18532 [00:14<00:12, 665.24det/s]matched IoU:  56%|█████▌    | 10400/18532 [00:14<00:12, 677.27det/s]matched IoU:  57%|█████▋    | 10480/18532 [00:14<00:11, 712.19det/s]matched IoU:  57%|█████▋    | 10566/18532 [00:14<00:10, 753.61det/s]matched IoU:  57%|█████▋    | 10642/18532 [00:14<00:11, 714.29det/s]matched IoU:  58%|█████▊    | 10734/18532 [00:14<00:10, 770.76det/s]matched IoU:  58%|█████▊    | 10812/18532 [00:14<00:10, 754.89det/s]matched IoU:  59%|█████▉    | 10888/18532 [00:15<00:10, 754.29det/s]matched IoU:  59%|█████▉    | 10964/18532 [00:15<00:10, 704.82det/s]matched IoU:  60%|█████▉    | 11041/18532 [00:15<00:10, 722.53det/s]matched IoU:  60%|█████▉    | 11114/18532 [00:15<00:10, 707.73det/s]matched IoU:  60%|██████    | 11186/18532 [00:15<00:10, 701.94det/s]matched IoU:  61%|██████    | 11268/18532 [00:15<00:09, 735.35det/s]matched IoU:  61%|██████    | 11349/18532 [00:15<00:09, 756.33det/s]matched IoU:  62%|██████▏   | 11425/18532 [00:15<00:10, 689.57det/s]matched IoU:  62%|██████▏   | 11500/18532 [00:15<00:09, 705.46det/s]matched IoU:  62%|██████▏   | 11572/18532 [00:16<00:10, 679.20det/s]matched IoU:  63%|██████▎   | 11645/18532 [00:16<00:09, 691.57det/s]matched IoU:  63%|██████▎   | 11715/18532 [00:16<00:09, 691.83det/s]matched IoU:  64%|██████▎   | 11785/18532 [00:16<00:09, 691.53det/s]matched IoU:  64%|██████▍   | 11855/18532 [00:16<00:10, 638.50det/s]matched IoU:  64%|██████▍   | 11928/18532 [00:16<00:10, 649.40det/s]matched IoU:  65%|██████▍   | 11999/18532 [00:16<00:09, 664.09det/s]matched IoU:  65%|██████▌   | 12070/18532 [00:16<00:09, 674.58det/s]matched IoU:  66%|██████▌   | 12140/18532 [00:16<00:09, 680.93det/s]matched IoU:  66%|██████▌   | 12209/18532 [00:17<00:09, 665.15det/s]matched IoU:  66%|██████▌   | 12276/18532 [00:17<00:09, 650.03det/s]matched IoU:  67%|██████▋   | 12362/18532 [00:17<00:08, 708.99det/s]matched IoU:  67%|██████▋   | 12443/18532 [00:17<00:08, 730.96det/s]matched IoU:  68%|██████▊   | 12517/18532 [00:17<00:08, 682.68det/s]matched IoU:  68%|██████▊   | 12595/18532 [00:17<00:08, 708.69det/s]matched IoU:  68%|██████▊   | 12679/18532 [00:17<00:07, 745.29det/s]matched IoU:  69%|██████▉   | 12755/18532 [00:17<00:07, 740.88det/s]matched IoU:  69%|██████▉   | 12830/18532 [00:17<00:08, 688.52det/s]matched IoU:  70%|██████▉   | 12900/18532 [00:17<00:08, 668.89det/s]matched IoU:  70%|██████▉   | 12968/18532 [00:18<00:08, 658.19det/s]matched IoU:  70%|███████   | 13038/18532 [00:18<00:08, 668.66det/s]matched IoU:  71%|███████   | 13106/18532 [00:18<00:08, 621.52det/s]matched IoU:  71%|███████   | 13191/18532 [00:18<00:07, 683.13det/s]matched IoU:  72%|███████▏  | 13261/18532 [00:18<00:07, 682.13det/s]matched IoU:  72%|███████▏  | 13332/18532 [00:18<00:07, 689.59det/s]matched IoU:  72%|███████▏  | 13402/18532 [00:18<00:07, 683.24det/s]matched IoU:  73%|███████▎  | 13471/18532 [00:18<00:07, 679.58det/s]matched IoU:  73%|███████▎  | 13540/18532 [00:18<00:07, 674.31det/s]matched IoU:  73%|███████▎  | 13608/18532 [00:19<00:07, 664.13det/s]matched IoU:  74%|███████▍  | 13675/18532 [00:19<00:07, 648.92det/s]matched IoU:  74%|███████▍  | 13743/18532 [00:19<00:07, 656.35det/s]matched IoU:  75%|███████▍  | 13809/18532 [00:19<00:07, 652.33det/s]matched IoU:  75%|███████▍  | 13881/18532 [00:19<00:06, 670.96det/s]matched IoU:  75%|███████▌  | 13957/18532 [00:19<00:06, 696.33det/s]matched IoU:  76%|███████▌  | 14033/18532 [00:19<00:06, 714.91det/s]matched IoU:  76%|███████▌  | 14105/18532 [00:19<00:06, 704.43det/s]matched IoU:  76%|███████▋  | 14176/18532 [00:19<00:06, 692.36det/s]matched IoU:  77%|███████▋  | 14247/18532 [00:19<00:06, 696.99det/s]matched IoU:  77%|███████▋  | 14331/18532 [00:20<00:05, 737.52det/s]matched IoU:  78%|███████▊  | 14405/18532 [00:20<00:05, 721.44det/s]matched IoU:  78%|███████▊  | 14478/18532 [00:20<00:05, 678.76det/s]matched IoU:  78%|███████▊  | 14547/18532 [00:20<00:06, 648.97det/s]matched IoU:  79%|███████▉  | 14625/18532 [00:20<00:05, 684.14det/s]matched IoU:  79%|███████▉  | 14695/18532 [00:20<00:05, 654.18det/s]matched IoU:  80%|███████▉  | 14767/18532 [00:20<00:05, 670.53det/s]matched IoU:  80%|████████  | 14851/18532 [00:20<00:05, 718.19det/s]matched IoU:  81%|████████  | 14924/18532 [00:20<00:05, 712.38det/s]matched IoU:  81%|████████  | 14997/18532 [00:21<00:04, 715.74det/s]matched IoU:  81%|████████▏ | 15083/18532 [00:21<00:04, 756.84det/s]matched IoU:  82%|████████▏ | 15163/18532 [00:21<00:04, 768.77det/s]matched IoU:  82%|████████▏ | 15241/18532 [00:21<00:04, 752.26det/s]matched IoU:  83%|████████▎ | 15317/18532 [00:21<00:04, 724.59det/s]matched IoU:  83%|████████▎ | 15390/18532 [00:21<00:04, 698.10det/s]matched IoU:  83%|████████▎ | 15461/18532 [00:21<00:04, 677.21det/s]matched IoU:  84%|████████▍ | 15530/18532 [00:21<00:04, 677.38det/s]matched IoU:  84%|████████▍ | 15598/18532 [00:21<00:04, 675.50det/s]matched IoU:  85%|████████▍ | 15666/18532 [00:22<00:04, 667.92det/s]matched IoU:  85%|████████▍ | 15733/18532 [00:22<00:04, 631.70det/s]matched IoU:  85%|████████▌ | 15799/18532 [00:22<00:04, 639.03det/s]matched IoU:  86%|████████▌ | 15871/18532 [00:22<00:04, 661.83det/s]matched IoU:  86%|████████▌ | 15945/18532 [00:22<00:03, 683.93det/s]matched IoU:  86%|████████▋ | 16022/18532 [00:22<00:03, 707.25det/s]matched IoU:  87%|████████▋ | 16095/18532 [00:22<00:03, 711.28det/s]matched IoU:  87%|████████▋ | 16168/18532 [00:22<00:03, 713.90det/s]matched IoU:  88%|████████▊ | 16240/18532 [00:22<00:03, 694.40det/s]matched IoU:  88%|████████▊ | 16319/18532 [00:22<00:03, 721.18det/s]matched IoU:  88%|████████▊ | 16392/18532 [00:23<00:03, 701.67det/s]matched IoU:  89%|████████▉ | 16484/18532 [00:23<00:02, 762.22det/s]matched IoU:  89%|████████▉ | 16562/18532 [00:23<00:02, 765.69det/s]matched IoU:  90%|████████▉ | 16639/18532 [00:23<00:02, 749.98det/s]matched IoU:  90%|█████████ | 16715/18532 [00:23<00:02, 731.76det/s]matched IoU:  91%|█████████ | 16789/18532 [00:23<00:02, 727.47det/s]matched IoU:  91%|█████████ | 16862/18532 [00:23<00:02, 703.06det/s]matched IoU:  91%|█████████▏| 16936/18532 [00:23<00:02, 711.41det/s]matched IoU:  92%|█████████▏| 17008/18532 [00:23<00:02, 693.76det/s]matched IoU:  92%|█████████▏| 17078/18532 [00:24<00:02, 685.96det/s]matched IoU:  93%|█████████▎| 17164/18532 [00:24<00:01, 735.19det/s]matched IoU:  93%|█████████▎| 17240/18532 [00:24<00:01, 741.27det/s]matched IoU:  93%|█████████▎| 17321/18532 [00:24<00:01, 760.82det/s]matched IoU:  94%|█████████▍| 17398/18532 [00:24<00:01, 716.85det/s]matched IoU:  94%|█████████▍| 17471/18532 [00:24<00:01, 700.01det/s]matched IoU:  95%|█████████▍| 17556/18532 [00:24<00:01, 741.96det/s]matched IoU:  95%|█████████▌| 17631/18532 [00:24<00:01, 718.03det/s]matched IoU:  96%|█████████▌| 17704/18532 [00:24<00:01, 700.35det/s]matched IoU:  96%|█████████▌| 17775/18532 [00:24<00:01, 667.62det/s]matched IoU:  96%|█████████▋| 17846/18532 [00:25<00:01, 677.64det/s]matched IoU:  97%|█████████▋| 17925/18532 [00:25<00:00, 707.53det/s]matched IoU:  97%|█████████▋| 17997/18532 [00:25<00:00, 710.68det/s]matched IoU:  98%|█████████▊| 18076/18532 [00:25<00:00, 733.00det/s]matched IoU:  98%|█████████▊| 18166/18532 [00:25<00:00, 781.94det/s]matched IoU:  98%|█████████▊| 18252/18532 [00:25<00:00, 802.57det/s]matched IoU:  99%|█████████▉| 18333/18532 [00:25<00:00, 794.38det/s]matched IoU:  99%|█████████▉| 18413/18532 [00:25<00:00, 785.18det/s]matched IoU: 100%|█████████▉| 18492/18532 [00:25<00:00, 733.81det/s]matched IoU: 100%|██████████| 18532/18532 [00:25<00:00, 713.34det/s]
+
+  skipped[no_gt_for_source] = 15016
+  matched 3516 detections
+
+Reading LPIPS from /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/eval_fid_lpips/lpips_per_sample.csv ...
+  joined 3516 detections (have IoU AND LPIPS)
+
+Creating per-bucket crop symlinks ...
+
+==============================================================================
+Pipeline B  --  Bucketed error-propagation analysis
+==============================================================================
+
+| Bucket         | Type           |      N | IoU mean | LPIPS mean | LPIPS med |
+|----------------------------------------------------------------------------|
+| zero_overlap   | arrow          |    791 |   0.0008 |     0.2243 |    0.2122 |
+| zero_overlap   | freeform_bbox  |    248 |   0.0023 |     0.4610 |    0.4662 |
+| zero_overlap   | number_letter  |   2069 |   0.0008 |     0.2037 |    0.1881 |
+| zero_overlap   | OVERALL        |   3108 |   0.0009 |     0.2295 |    0.2033 |
+|----------------------------------------------------------------------------|
+| low_iou        | arrow          |     48 |   0.1740 |     0.2397 |    0.2351 |
+| low_iou        | freeform_bbox  |     23 |   0.1278 |     0.4004 |    0.4098 |
+| low_iou        | number_letter  |     94 |   0.1325 |     0.3057 |    0.3165 |
+| low_iou        | OVERALL        |    165 |   0.1439 |     0.2997 |    0.3103 |
+|----------------------------------------------------------------------------|
+| mid_iou        | arrow          |     85 |   0.4697 |     0.1747 |    0.1673 |
+| mid_iou        | freeform_bbox  |      2 |   0.3350 |     0.2582 |    0.2582 |
+| mid_iou        | number_letter  |     86 |   0.4196 |     0.1891 |    0.1753 |
+| mid_iou        | OVERALL        |    173 |   0.4433 |     0.1828 |    0.1726 |
+|----------------------------------------------------------------------------|
+| high_iou       | arrow          |     67 |   0.6748 |     0.1734 |    0.1698 |
+| high_iou       | number_letter  |      3 |   0.6209 |     0.1764 |    0.2006 |
+| high_iou       | OVERALL        |     70 |   0.6725 |     0.1735 |    0.1704 |
+|----------------------------------------------------------------------------|
+
+detection_iou       : /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation/detection_iou_per_sample.csv
+bucket stats        : /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation/bucketed_stats.csv
+correlations        : /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation/correlations.csv
+bucket crop symlinks: /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation/bucket_crops
+
+Next: for each bucket dir under bucket_crops/, run
+    python compute_fid_from_crops.py --eval-dir bucket_crops/<bucket>
+to fill in the per-bucket FID. The driver script does this.
+[2026-05-21T10:14:10+02:00] step 1 rc=0, elapsed 27 s
+[2026-05-21T10:14:10+02:00] 
+[2026-05-21T10:14:10+02:00] === STEP 2: per-bucket FID via compute_fid_from_crops.py ===
+[2026-05-21T10:14:10+02:00] 
+[2026-05-21T10:14:10+02:00] >>> bucket: high_iou
+Device: cuda
+Loading InceptionV3 (torchvision, ImageNet weights)...
+
+Computing FID per annotation type...
+  arrow/predicted:   0%|          | 0/3 [00:00<?, ?batch/s]  arrow/predicted:  33%|███▎      | 1/3 [00:02<00:05,  2.58s/batch]                                                                     arrow/original:   0%|          | 0/3 [00:00<?, ?batch/s]  arrow/original:  33%|███▎      | 1/3 [00:00<00:00,  3.50batch/s]                                                                  /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/compute_fid_from_crops.py:161: DeprecationWarning: The `disp` argument is deprecated and will be removed in SciPy 1.18.0.
+  covmean, _ = sqrtm(sigma_a @ sigma_b, disp=False)
+  arrow           : FID = 109.242  (n_pred=67, n_orig=67)
+  number_letter/predicted:   0%|          | 0/1 [00:00<?, ?batch/s]                                                                     number_letter/original:   0%|          | 0/1 [00:00<?, ?batch/s]                                                                  /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/compute_fid_from_crops.py:161: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = sqrtm(sigma_a @ sigma_b, disp=False)
+  number_letter   : FID = 223.364  (n_pred=3, n_orig=3)
+
+Computing overall FID (concatenating cached features)...
+  OVERALL         : FID = 111.146
+
+Loading LPIPS values from lpips_per_sample.csv...
+
+==============================================================================
+FID + LPIPS results (region-cropped, torchvision InceptionV3)
+==============================================================================
+
+| Type               |     N | LPIPS mean | LPIPS med | LPIPS std |      FID |
+|----------------------------------------------------------------------------|
+| arrow              |    67 |     0.1734 |    0.1698 |    0.0578 |  109.242 |
+| number_letter      |     3 |     0.1764 |    0.2006 |    0.0423 |  223.364 |
+| OVERALL            |    70 |     0.1735 |    0.1704 |    0.0570 |  111.146 |
+
+Summary CSV: /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation/bucket_crops/high_iou/fid_lpips_summary.csv
+[2026-05-21T10:15:30+02:00] <<< high_iou elapsed 80 s
+[2026-05-21T10:15:30+02:00] 
+[2026-05-21T10:15:30+02:00] >>> bucket: low_iou
+Device: cuda
+Loading InceptionV3 (torchvision, ImageNet weights)...
+
+Computing FID per annotation type...
+  arrow/predicted:   0%|          | 0/2 [00:00<?, ?batch/s]  arrow/predicted:  50%|█████     | 1/2 [00:02<00:02,  2.43s/batch]                                                                     arrow/original:   0%|          | 0/2 [00:00<?, ?batch/s]  arrow/original:  50%|█████     | 1/2 [00:00<00:00,  3.57batch/s]                                                                  /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/compute_fid_from_crops.py:161: DeprecationWarning: The `disp` argument is deprecated and will be removed in SciPy 1.18.0.
+  covmean, _ = sqrtm(sigma_a @ sigma_b, disp=False)
+  arrow           : FID = 145.853  (n_pred=48, n_orig=48)
+  freeform_bbox/predicted:   0%|          | 0/1 [00:00<?, ?batch/s]  freeform_bbox/predicted: 100%|██████████| 1/1 [00:00<00:00,  4.34batch/s]                                                                             freeform_bbox/original:   0%|          | 0/1 [00:00<?, ?batch/s]  freeform_bbox/original: 100%|██████████| 1/1 [00:00<00:00,  5.07batch/s]                                                                            freeform_bbox   : FID = 210.284  (n_pred=23, n_orig=23)
+  number_letter/predicted:   0%|          | 0/3 [00:00<?, ?batch/s]  number_letter/predicted:  33%|███▎      | 1/3 [00:00<00:00,  2.90batch/s]                                                                             number_letter/original:   0%|          | 0/3 [00:00<?, ?batch/s]  number_letter/original:  33%|███▎      | 1/3 [00:00<00:00,  3.45batch/s]                                                                            number_letter   : FID = 171.102  (n_pred=94, n_orig=94)
+
+Computing overall FID (concatenating cached features)...
+  OVERALL         : FID = 140.138
+
+Loading LPIPS values from lpips_per_sample.csv...
+
+==============================================================================
+FID + LPIPS results (region-cropped, torchvision InceptionV3)
+==============================================================================
+
+| Type               |     N | LPIPS mean | LPIPS med | LPIPS std |      FID |
+|----------------------------------------------------------------------------|
+| arrow              |    48 |     0.2397 |    0.2351 |    0.1000 |  145.853 |
+| freeform_bbox      |    23 |     0.4004 |    0.4098 |    0.1139 |  210.284 |
+| number_letter      |    94 |     0.3057 |    0.3165 |    0.0886 |  171.102 |
+| OVERALL            |   165 |     0.2997 |    0.3103 |    0.1075 |  140.138 |
+
+Summary CSV: /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation/bucket_crops/low_iou/fid_lpips_summary.csv
+[2026-05-21T10:17:16+02:00] <<< low_iou elapsed 106 s
+[2026-05-21T10:17:16+02:00] 
+[2026-05-21T10:17:16+02:00] >>> bucket: mid_iou
+Device: cuda
+Loading InceptionV3 (torchvision, ImageNet weights)...
+
+Computing FID per annotation type...
+  arrow/predicted:   0%|          | 0/3 [00:00<?, ?batch/s]  arrow/predicted:  33%|███▎      | 1/3 [00:02<00:04,  2.41s/batch]                                                                     arrow/original:   0%|          | 0/3 [00:00<?, ?batch/s]  arrow/original:  33%|███▎      | 1/3 [00:00<00:00,  4.17batch/s]                                                                  /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/compute_fid_from_crops.py:161: DeprecationWarning: The `disp` argument is deprecated and will be removed in SciPy 1.18.0.
+  covmean, _ = sqrtm(sigma_a @ sigma_b, disp=False)
+  arrow           : FID = 104.351  (n_pred=85, n_orig=85)
+  freeform_bbox/predicted:   0%|          | 0/1 [00:00<?, ?batch/s]  freeform_bbox/predicted: 100%|██████████| 1/1 [00:00<00:00,  7.76batch/s]                                                                             freeform_bbox/original:   0%|          | 0/1 [00:00<?, ?batch/s]                                                                    freeform_bbox   : FID = 179.519  (n_pred=2, n_orig=2)
+  number_letter/predicted:   0%|          | 0/3 [00:00<?, ?batch/s]  number_letter/predicted:  33%|███▎      | 1/3 [00:00<00:00,  3.94batch/s]                                                                             number_letter/original:   0%|          | 0/3 [00:00<?, ?batch/s]  number_letter/original:  33%|███▎      | 1/3 [00:00<00:00,  3.74batch/s]                                                                            number_letter   : FID = 122.029  (n_pred=86, n_orig=86)
+
+Computing overall FID (concatenating cached features)...
+  OVERALL         : FID = 100.779
+
+Loading LPIPS values from lpips_per_sample.csv...
+
+==============================================================================
+FID + LPIPS results (region-cropped, torchvision InceptionV3)
+==============================================================================
+
+| Type               |     N | LPIPS mean | LPIPS med | LPIPS std |      FID |
+|----------------------------------------------------------------------------|
+| arrow              |    85 |     0.1747 |    0.1673 |    0.0705 |  104.351 |
+| freeform_bbox      |     2 |     0.2582 |    0.2582 |    0.0952 |  179.519 |
+| number_letter      |    86 |     0.1891 |    0.1753 |    0.0745 |  122.029 |
+| OVERALL            |   173 |     0.1828 |    0.1726 |    0.0731 |  100.779 |
+
+Summary CSV: /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation/bucket_crops/mid_iou/fid_lpips_summary.csv
+[2026-05-21T10:18:59+02:00] <<< mid_iou elapsed 103 s
+[2026-05-21T10:18:59+02:00] 
+[2026-05-21T10:18:59+02:00] >>> bucket: zero_overlap
+Device: cuda
+Loading InceptionV3 (torchvision, ImageNet weights)...
+
+Computing FID per annotation type...
+  arrow/predicted:   0%|          | 0/25 [00:00<?, ?batch/s]  arrow/predicted:   4%|▍         | 1/25 [00:02<01:09,  2.90s/batch]  arrow/predicted:  20%|██        | 5/25 [00:03<00:09,  2.18batch/s]  arrow/predicted:  32%|███▏      | 8/25 [00:03<00:04,  3.91batch/s]  arrow/predicted:  48%|████▊     | 12/25 [00:03<00:01,  6.72batch/s]  arrow/predicted:  64%|██████▍   | 16/25 [00:03<00:00,  9.86batch/s]  arrow/predicted:  80%|████████  | 20/25 [00:03<00:00, 13.19batch/s]  arrow/predicted:  92%|█████████▏| 23/25 [00:03<00:00, 15.21batch/s]                                                                       arrow/original:   0%|          | 0/25 [00:00<?, ?batch/s]  arrow/original:   4%|▍         | 1/25 [00:00<00:07,  3.16batch/s]  arrow/original:  16%|█▌        | 4/25 [00:00<00:01, 11.48batch/s]  arrow/original:  32%|███▏      | 8/25 [00:00<00:00, 18.48batch/s]  arrow/original:  48%|████▊     | 12/25 [00:00<00:00, 22.71batch/s]  arrow/original:  64%|██████▍   | 16/25 [00:00<00:00, 25.21batch/s]  arrow/original:  76%|███████▌  | 19/25 [00:00<00:00, 26.19batch/s]  arrow/original:  92%|█████████▏| 23/25 [00:01<00:00, 27.82batch/s]                                                                    /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/compute_fid_from_crops.py:161: DeprecationWarning: The `disp` argument is deprecated and will be removed in SciPy 1.18.0.
+  covmean, _ = sqrtm(sigma_a @ sigma_b, disp=False)
+  arrow           : FID = 68.631  (n_pred=791, n_orig=791)
+  freeform_bbox/predicted:   0%|          | 0/8 [00:00<?, ?batch/s]  freeform_bbox/predicted:  12%|█▎        | 1/8 [00:00<00:01,  4.25batch/s]  freeform_bbox/predicted:  62%|██████▎   | 5/8 [00:00<00:00, 15.79batch/s]  freeform_bbox/predicted: 100%|██████████| 8/8 [00:00<00:00, 19.29batch/s]                                                                             freeform_bbox/original:   0%|          | 0/8 [00:00<?, ?batch/s]  freeform_bbox/original:  12%|█▎        | 1/8 [00:00<00:02,  3.37batch/s]  freeform_bbox/original:  62%|██████▎   | 5/8 [00:00<00:00, 13.96batch/s]                                                                            freeform_bbox   : FID = 154.568  (n_pred=248, n_orig=248)
+  number_letter/predicted:   0%|          | 0/65 [00:00<?, ?batch/s]  number_letter/predicted:   2%|▏         | 1/65 [00:00<00:18,  3.40batch/s]  number_letter/predicted:   8%|▊         | 5/65 [00:00<00:04, 13.82batch/s]  number_letter/predicted:  12%|█▏        | 8/65 [00:00<00:03, 18.41batch/s]  number_letter/predicted:  17%|█▋        | 11/65 [00:00<00:02, 21.13batch/s]  number_letter/predicted:  23%|██▎       | 15/65 [00:00<00:02, 24.53batch/s]  number_letter/predicted:  28%|██▊       | 18/65 [00:00<00:01, 25.87batch/s]  number_letter/predicted:  32%|███▏      | 21/65 [00:00<00:01, 27.00batch/s]  number_letter/predicted:  38%|███▊      | 25/65 [00:01<00:01, 28.50batch/s]  number_letter/predicted:  45%|████▍     | 29/65 [00:01<00:01, 28.77batch/s]  number_letter/predicted:  51%|█████     | 33/65 [00:01<00:01, 29.18batch/s]  number_letter/predicted:  57%|█████▋    | 37/65 [00:01<00:00, 29.52batch/s]  number_letter/predicted:  63%|██████▎   | 41/65 [00:01<00:00, 29.62batch/s]  number_letter/predicted:  69%|██████▉   | 45/65 [00:01<00:00, 29.08batch/s]  number_letter/predicted:  75%|███████▌  | 49/65 [00:01<00:00, 29.65batch/s]  number_letter/predicted:  80%|████████  | 52/65 [00:02<00:00, 29.61batch/s]  number_letter/predicted:  86%|████████▌ | 56/65 [00:02<00:00, 30.48batch/s]  number_letter/predicted:  92%|█████████▏| 60/65 [00:02<00:00, 30.50batch/s]  number_letter/predicted:  98%|█████████▊| 64/65 [00:02<00:00, 30.47batch/s]                                                                               number_letter/original:   0%|          | 0/65 [00:00<?, ?batch/s]  number_letter/original:   2%|▏         | 1/65 [00:00<00:21,  2.97batch/s]  number_letter/original:   8%|▊         | 5/65 [00:00<00:04, 12.86batch/s]  number_letter/original:  14%|█▍        | 9/65 [00:00<00:02, 19.07batch/s]  number_letter/original:  20%|██        | 13/65 [00:00<00:02, 22.85batch/s]  number_letter/original:  26%|██▌       | 17/65 [00:00<00:01, 25.39batch/s]  number_letter/original:  32%|███▏      | 21/65 [00:00<00:01, 26.96batch/s]  number_letter/original:  38%|███▊      | 25/65 [00:01<00:01, 28.00batch/s]  number_letter/original:  43%|████▎     | 28/65 [00:01<00:01, 28.25batch/s]  number_letter/original:  48%|████▊     | 31/65 [00:01<00:01, 28.29batch/s]  number_letter/original:  54%|█████▍    | 35/65 [00:01<00:01, 29.28batch/s]  number_letter/original:  58%|█████▊    | 38/65 [00:01<00:00, 29.12batch/s]  number_letter/original:  65%|██████▍   | 42/65 [00:01<00:00, 29.52batch/s]  number_letter/original:  69%|██████▉   | 45/65 [00:01<00:00, 28.84batch/s]  number_letter/original:  74%|███████▍  | 48/65 [00:01<00:00, 28.06batch/s]  number_letter/original:  78%|███████▊  | 51/65 [00:02<00:00, 28.31batch/s]  number_letter/original:  85%|████████▍ | 55/65 [00:02<00:00, 29.49batch/s]  number_letter/original:  91%|█████████ | 59/65 [00:02<00:00, 30.11batch/s]  number_letter/original:  97%|█████████▋| 63/65 [00:02<00:00, 29.96batch/s]                                                                              number_letter   : FID = 42.998  (n_pred=2069, n_orig=2069)
+
+Computing overall FID (concatenating cached features)...
+  OVERALL         : FID = 33.304
+
+Loading LPIPS values from lpips_per_sample.csv...
+
+==============================================================================
+FID + LPIPS results (region-cropped, torchvision InceptionV3)
+==============================================================================
+
+| Type               |     N | LPIPS mean | LPIPS med | LPIPS std |      FID |
+|----------------------------------------------------------------------------|
+| arrow              |   791 |     0.2243 |    0.2122 |    0.0934 |   68.631 |
+| freeform_bbox      |   248 |     0.4610 |    0.4662 |    0.1619 |  154.568 |
+| number_letter      |  2069 |     0.2037 |    0.1881 |    0.0813 |   42.998 |
+| OVERALL            |  3108 |     0.2295 |    0.2033 |    0.1159 |   33.304 |
+
+Summary CSV: /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation/bucket_crops/zero_overlap/fid_lpips_summary.csv
+[2026-05-21T10:20:52+02:00] <<< zero_overlap elapsed 113 s
+[2026-05-21T10:20:52+02:00] 
+[2026-05-21T10:20:52+02:00] ###################################################
+[2026-05-21T10:20:52+02:00] # DONE
+[2026-05-21T10:20:52+02:00] #
+[2026-05-21T10:20:52+02:00] # Results to send back for chapter 6.5.2:
+[2026-05-21T10:20:52+02:00] #   /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation/bucketed_stats.csv
+[2026-05-21T10:20:52+02:00] #   /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation/correlations.csv
+[2026-05-21T10:20:52+02:00] #   /home/ahma/Medical_Segmentation/FineTuning_SAM3/SAM3Tracker/runs/2026-04-19_16-03-50_v6_arrow_pca_axis_freeform_mask/pipeline_b_default/error_propagation/bucket_crops/<bucket>/fid_lpips_summary.csv  (per bucket)
+[2026-05-21T10:20:52+02:00] ###################################################

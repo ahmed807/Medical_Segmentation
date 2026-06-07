@@ -1,0 +1,137 @@
+run,source,type_or_key,n,metric,value
+iou,boundary_f1,arrow,2080,iou_mean,0.6543
+iou,boundary_f1,arrow,2080,iou_median,0.7457
+iou,boundary_f1,arrow,2080,f1_mean,0.6882
+iou,boundary_f1,arrow,2080,f1_median,0.7552
+iou,boundary_f1,arrow,2080,precision_mean,0.6861
+iou,boundary_f1,arrow,2080,recall_mean,0.7236
+iou,boundary_f1,freeform_bbox,4141,iou_mean,0.7664
+iou,boundary_f1,freeform_bbox,4141,iou_median,0.8160
+iou,boundary_f1,freeform_bbox,4141,f1_mean,0.8523
+iou,boundary_f1,freeform_bbox,4141,f1_median,0.9094
+iou,boundary_f1,freeform_bbox,4141,precision_mean,0.8533
+iou,boundary_f1,freeform_bbox,4141,recall_mean,0.8580
+iou,boundary_f1,number_letter,2067,iou_mean,0.6475
+iou,boundary_f1,number_letter,2067,iou_median,0.7520
+iou,boundary_f1,number_letter,2067,f1_mean,0.6585
+iou,boundary_f1,number_letter,2067,f1_median,0.7189
+iou,boundary_f1,number_letter,2067,precision_mean,0.6577
+iou,boundary_f1,number_letter,2067,recall_mean,0.6871
+iou,boundary_f1,OVERALL (micro),8288,iou_mean,0.7086
+iou,boundary_f1,OVERALL (micro),8288,iou_median,0.7835
+iou,boundary_f1,OVERALL (micro),8288,f1_mean,0.7628
+iou,boundary_f1,OVERALL (micro),8288,f1_median,0.8392
+iou,boundary_f1,OVERALL (micro),8288,precision_mean,0.7626
+iou,boundary_f1,OVERALL (micro),8288,recall_mean,0.7817
+iou,boundary_f1,OVERALL (macro),8288,iou_mean,0.6894
+iou,boundary_f1,OVERALL (macro),8288,f1_mean,0.7330
+iou,fid_lpips,arrow,2080,lpips_mean,0.1632
+iou,fid_lpips,arrow,2080,lpips_median,0.1552
+iou,fid_lpips,arrow,2080,lpips_std,0.0688
+iou,fid_lpips,arrow,2080,fid,24.138
+iou,fid_lpips,freeform_bbox,4141,lpips_mean,0.1901
+iou,fid_lpips,freeform_bbox,4141,lpips_median,0.1944
+iou,fid_lpips,freeform_bbox,4141,lpips_std,0.0859
+iou,fid_lpips,freeform_bbox,4141,fid,18.644
+iou,fid_lpips,number_letter,2067,lpips_mean,0.1891
+iou,fid_lpips,number_letter,2067,lpips_median,0.1855
+iou,fid_lpips,number_letter,2067,lpips_std,0.0723
+iou,fid_lpips,number_letter,2067,fid,29.523
+iou,fid_lpips,OVERALL,8288,lpips_mean,0.1831
+iou,fid_lpips,OVERALL,8288,lpips_median,0.1815
+iou,fid_lpips,OVERALL,8288,lpips_std,0.0795
+iou,fid_lpips,OVERALL,8288,fid,12.604
+no_iou,boundary_f1,arrow,2080,iou_mean,0.6440
+no_iou,boundary_f1,arrow,2080,iou_median,0.7398
+no_iou,boundary_f1,arrow,2080,f1_mean,0.6705
+no_iou,boundary_f1,arrow,2080,f1_median,0.7343
+no_iou,boundary_f1,arrow,2080,precision_mean,0.6645
+no_iou,boundary_f1,arrow,2080,recall_mean,0.7142
+no_iou,boundary_f1,freeform_bbox,4141,iou_mean,0.7675
+no_iou,boundary_f1,freeform_bbox,4141,iou_median,0.8142
+no_iou,boundary_f1,freeform_bbox,4141,f1_mean,0.8510
+no_iou,boundary_f1,freeform_bbox,4141,f1_median,0.9071
+no_iou,boundary_f1,freeform_bbox,4141,precision_mean,0.8503
+no_iou,boundary_f1,freeform_bbox,4141,recall_mean,0.8583
+no_iou,boundary_f1,number_letter,2067,iou_mean,0.6408
+no_iou,boundary_f1,number_letter,2067,iou_median,0.7455
+no_iou,boundary_f1,number_letter,2067,f1_mean,0.6305
+no_iou,boundary_f1,number_letter,2067,f1_median,0.6979
+no_iou,boundary_f1,number_letter,2067,precision_mean,0.6215
+no_iou,boundary_f1,number_letter,2067,recall_mean,0.6693
+no_iou,boundary_f1,OVERALL (micro),8288,iou_mean,0.7049
+no_iou,boundary_f1,OVERALL (micro),8288,iou_median,0.7831
+no_iou,boundary_f1,OVERALL (micro),8288,f1_mean,0.7507
+no_iou,boundary_f1,OVERALL (micro),8288,f1_median,0.8326
+no_iou,boundary_f1,OVERALL (micro),8288,precision_mean,0.7467
+no_iou,boundary_f1,OVERALL (micro),8288,recall_mean,0.7750
+no_iou,boundary_f1,OVERALL (macro),8288,iou_mean,0.6841
+no_iou,boundary_f1,OVERALL (macro),8288,f1_mean,0.7173
+no_iou,fid_lpips,arrow,2080,lpips_mean,0.1632
+no_iou,fid_lpips,arrow,2080,lpips_median,0.1552
+no_iou,fid_lpips,arrow,2080,lpips_std,0.0688
+no_iou,fid_lpips,arrow,2080,fid,24.138
+no_iou,fid_lpips,freeform_bbox,4141,lpips_mean,0.1901
+no_iou,fid_lpips,freeform_bbox,4141,lpips_median,0.1944
+no_iou,fid_lpips,freeform_bbox,4141,lpips_std,0.0859
+no_iou,fid_lpips,freeform_bbox,4141,fid,18.644
+no_iou,fid_lpips,number_letter,2067,lpips_mean,0.1891
+no_iou,fid_lpips,number_letter,2067,lpips_median,0.1855
+no_iou,fid_lpips,number_letter,2067,lpips_std,0.0723
+no_iou,fid_lpips,number_letter,2067,fid,29.523
+no_iou,fid_lpips,OVERALL,8288,lpips_mean,0.1831
+no_iou,fid_lpips,OVERALL,8288,lpips_median,0.1815
+no_iou,fid_lpips,OVERALL,8288,lpips_std,0.0795
+no_iou,fid_lpips,OVERALL,8288,fid,12.604
+pvs,boundary_f1,arrow,2080,iou_mean,0.1861
+pvs,boundary_f1,arrow,2080,iou_median,0.0047
+pvs,boundary_f1,arrow,2080,f1_mean,0.2868
+pvs,boundary_f1,arrow,2080,f1_median,0.1305
+pvs,boundary_f1,arrow,2080,precision_mean,0.3290
+pvs,boundary_f1,arrow,2080,recall_mean,0.3289
+pvs,boundary_f1,freeform_bbox,4141,iou_mean,0.5367
+pvs,boundary_f1,freeform_bbox,4141,iou_median,0.5499
+pvs,boundary_f1,freeform_bbox,4141,f1_mean,0.4109
+pvs,boundary_f1,freeform_bbox,4141,f1_median,0.4007
+pvs,boundary_f1,freeform_bbox,4141,precision_mean,0.3585
+pvs,boundary_f1,freeform_bbox,4141,recall_mean,0.5108
+pvs,boundary_f1,number_letter,2067,iou_mean,0.4137
+pvs,boundary_f1,number_letter,2067,iou_median,0.4027
+pvs,boundary_f1,number_letter,2067,f1_mean,0.4487
+pvs,boundary_f1,number_letter,2067,f1_median,0.4763
+pvs,boundary_f1,number_letter,2067,precision_mean,0.4482
+pvs,boundary_f1,number_letter,2067,recall_mean,0.4923
+pvs,boundary_f1,OVERALL (micro),8288,iou_mean,0.4180
+pvs,boundary_f1,OVERALL (micro),8288,iou_median,0.4075
+pvs,boundary_f1,OVERALL (micro),8288,f1_mean,0.3892
+pvs,boundary_f1,OVERALL (micro),8288,f1_median,0.3527
+pvs,boundary_f1,OVERALL (micro),8288,precision_mean,0.3735
+pvs,boundary_f1,OVERALL (micro),8288,recall_mean,0.4605
+pvs,boundary_f1,OVERALL (macro),8288,iou_mean,0.3788
+pvs,boundary_f1,OVERALL (macro),8288,f1_mean,0.3821
+pcs,boundary_f1,arrow,2080,iou_mean,0.0811
+pcs,boundary_f1,arrow,2080,iou_median,0.0125
+pcs,boundary_f1,arrow,2080,f1_mean,0.1681
+pcs,boundary_f1,arrow,2080,f1_median,0.1112
+pcs,boundary_f1,arrow,2080,precision_mean,0.2000
+pcs,boundary_f1,arrow,2080,recall_mean,0.2174
+pcs,boundary_f1,freeform_bbox,4141,iou_mean,0.3258
+pcs,boundary_f1,freeform_bbox,4141,iou_median,0.2592
+pcs,boundary_f1,freeform_bbox,4141,f1_mean,0.2840
+pcs,boundary_f1,freeform_bbox,4141,f1_median,0.2519
+pcs,boundary_f1,freeform_bbox,4141,precision_mean,0.2338
+pcs,boundary_f1,freeform_bbox,4141,recall_mean,0.3907
+pcs,boundary_f1,number_letter,2067,iou_mean,0.2280
+pcs,boundary_f1,number_letter,2067,iou_median,0.1445
+pcs,boundary_f1,number_letter,2067,f1_mean,0.2183
+pcs,boundary_f1,number_letter,2067,f1_median,0.1518
+pcs,boundary_f1,number_letter,2067,precision_mean,0.2187
+pcs,boundary_f1,number_letter,2067,recall_mean,0.2815
+pcs,boundary_f1,OVERALL (micro),8288,iou_mean,0.2400
+pcs,boundary_f1,OVERALL (micro),8288,iou_median,0.1453
+pcs,boundary_f1,OVERALL (micro),8288,f1_mean,0.2385
+pcs,boundary_f1,OVERALL (micro),8288,f1_median,0.1840
+pcs,boundary_f1,OVERALL (micro),8288,precision_mean,0.2216
+pcs,boundary_f1,OVERALL (micro),8288,recall_mean,0.3200
+pcs,boundary_f1,OVERALL (macro),8288,iou_mean,0.2116
+pcs,boundary_f1,OVERALL (macro),8288,f1_mean,0.2235

@@ -1,0 +1,6 @@
+type,n,iou_mean,iou_median,f1_mean,f1_median,precision_mean,recall_mean
+arrow,2080,0.6543,0.7457,0.6882,0.7552,0.6861,0.7236
+freeform_bbox,4141,0.7664,0.8160,0.8523,0.9094,0.8533,0.8580
+number_letter,2067,0.6475,0.7520,0.6585,0.7189,0.6577,0.6871
+OVERALL (micro),8288,0.7086,0.7835,0.7628,0.8392,0.7626,0.7817
+OVERALL (macro),8288,0.6894,,0.7330,,,

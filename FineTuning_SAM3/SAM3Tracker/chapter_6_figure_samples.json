@@ -1,0 +1,42 @@
+{
+  "_comment_fig5": "Pipeline A inpainting examples — median-quality one per class. Picked from your success lists.",
+  "fig5_inpainting_examples": {
+    "arrow":         "41_1_1",
+    "freeform_bbox": "40_2_9",
+    "number_letter": "94_0_1"
+  },
+
+  "_comment_fig6": "Pipeline A vs B. Row 1 is the freeform stage-coupling failure: a real freeform annotation around a boy. PA mask = dashed contour → FLUX removes the contour, boy preserved. PB mask = SAM-2 filled object → FLUX removes the boy. Row 2 is the n/l false-positive case: a letter on a t-shirt is detected as a glyph annotation. PA correctly takes no action (no real annotation there), PB inpaints the small region with a visually-plausible reconstruction, illustrating the regional invariance of n/l class to false positives.",
+  "fig6_a_vs_b_examples": [
+    {
+      "row_label": "freeform: stage-coupling failure (object removed)",
+      "pb_entry_id": "2182_1_det0",
+      "pa_basename": "2182_1_4"
+    },
+    {
+      "row_label": "n/l: false positive absorbed",
+      "pb_entry_id": "8_3_det1",
+      "pa_basename": null
+    }
+  ],
+
+  "_comment_fig7": "Pipeline A segmentation SUCCESS cases. One per class, picked from your hand-curated success lists.",
+  "fig7_success_cases": {
+    "arrow":         "41_1_1",
+    "freeform_bbox": "40_2_9",
+    "number_letter": "94_0_1"
+  },
+
+  "_comment_fig8": "Pipeline A segmentation FAILURE cases. Set to null = auto-select at IoU 10th percentile. Replace with manual IDs once you find instructive failures via search_samples.py.",
+  "fig8_failure_cases": {
+    "arrow":         null,
+    "freeform_bbox": null,
+    "number_letter": null
+  },
+
+  "_alternatives_arrow_success":       ["41_1_1", "109_0_0", "118_1_1", "166_1_2", "476_1_2"],
+  "_alternatives_freeform_success":    ["40_2_9", "63_0_0", "411_0_0", "510_1_1", "750_1_2", "813_1_1", "896_1_4", "912_1_1", "4218_1_1", "4232_0_0"],
+  "_alternatives_number_letter_success": ["94_0_1", "280_1_4", "299_1_3", "299_1_4", "329_0_0", "502_0_0", "508_0_0", "581_0_0", "2979_0_1", "3016_5_210"],
+  "_alternatives_pb_arrow_success":    ["8_0_det0", "52_0_det0", "64_0_det0"],
+  "_alternatives_pb_detection_failures": ["9_2_det2 — spoon detected as arrow", "9_2_det3 — spoon detected as arrow", "8_3_det1 — t-shirt letter detected as annotation"]
+}
